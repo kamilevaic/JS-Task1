@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -52,6 +52,30 @@ form {
   color: #fff;
 }
 
+#output {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flexbox;
+  flex-wrap: wrap;
+  height: auto;
+  align-items: center;
+  font-size: 2.5em;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#output div:nth-child(1) {
+  background-color: skyblue;
+}
+
+#output div:nth-child(2) {
+  background-color: rgb(135, 235, 177);
+}
+
+#output div:nth-child(3) {
+  background-color: pink;
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {

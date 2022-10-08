@@ -8,3 +8,22 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+let pounds = document.getElementById("to-lb");
+let grams = document.getElementById("to-g");
+let oz = document.getElementById("to-oz");
+
+const calculate = document
+  .getElementById("submit-btn")
+  .addEventListener("click", convert);
+
+function convert(e) {
+  e.preventDefault();
+  let input = document.getElementById("search").value;
+  let toLb = input * 2.2046;
+  pounds.innerHTML = toLb + " lb";
+  let toGrams = input * 1000;
+  grams.innerHTML = toGrams + " g";
+  let toOz = input * 35.274;
+  oz.innerHTML = toOz + " oz";
+}
